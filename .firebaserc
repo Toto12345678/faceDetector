@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "cloudpwa-8b6ec": {
+      "hosting": {
+        "FaceDetector": [
+          "cloudpwa-8b6ec"
+        ]
+      }
+    }
+  }
+}

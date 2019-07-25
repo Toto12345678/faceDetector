@@ -113,8 +113,13 @@
               "devServerTarget": "FaceDetector:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "FaceDetector"
 }

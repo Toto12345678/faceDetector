@@ -1,0 +1,29 @@
+<div class="columns is-multiline is-mobile is-centered">
+  <div class="column is-12">
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Detector de rostros
+          </h1>
+          <h2 class="subtitle">
+            Con cloud functions y firebase
+            <span style="color:red;" *ngIf="message">{{message}}</span>
+          </h2>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="column is-8-tablet is-12-mobile centered">
+    <div class="field">
+      <div><video #video id="video" width="640" height="480" autoplay></video></div>
+      <div class="has-text-centered"><button id="snap" (click)="capture()" class="button is-warning">Tomar foto</button></div>
+      <canvas #canvas id="canvas" width="640" height="400"></canvas>
+    </div>
+  </div>
+  <div class="column is-8-tablet is-12-mobile centered">
+    <p class="title">Labels</p>
+    <span *ngFor='let label of labels' class="tag is-primary is-medium mr-2 mb-2">{{label}}</span>
+  </div>
+</div>
